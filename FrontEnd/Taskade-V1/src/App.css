@@ -192,6 +192,71 @@
 .empty-state > p { max-width: 260px; margin: 6px 0 14px; color: var(--muted); font-size: 12px; line-height: 1.5; }
 .compact-empty { min-height: 165px; }
 .storage-warning { padding: 9px 20px; color: #9b5b26; background: #fff7e8; border-bottom: 1px solid #f0dfbd; text-align: center; font-size: 13px; }
+.dashboard-page {
+  --dashboard-violet: #7356dc;
+  --dashboard-blue: #4384d2;
+  --dashboard-green: #37966d;
+  --dashboard-orange: #d8893f;
+  --dashboard-rose: #ca668d;
+}
+.dashboard-page .metric-card, .dashboard-page .panel { border-color: color-mix(in srgb, var(--dashboard-violet) 24%, var(--line)); }
+.dashboard-page .metric-card { border-top: 3px solid var(--dashboard-violet); }
+.dashboard-page .metric-card:nth-child(2) { border-top-color: var(--dashboard-green); }
+.dashboard-page .metric-card:nth-child(3) { border-top-color: var(--dashboard-blue); }
+.dashboard-page .metric-card:nth-child(4) { border-top-color: var(--dashboard-orange); }
+.dashboard-page .icon-violet, .dashboard-page .mark-violet { color: var(--dashboard-violet); background: color-mix(in srgb, var(--dashboard-violet) 12%, var(--surface)); }
+.dashboard-page .icon-green, .dashboard-page .mark-green { color: var(--dashboard-green); background: color-mix(in srgb, var(--dashboard-green) 12%, var(--surface)); }
+.dashboard-page .icon-blue, .dashboard-page .mark-blue { color: var(--dashboard-blue); background: color-mix(in srgb, var(--dashboard-blue) 12%, var(--surface)); }
+.dashboard-page .icon-orange, .dashboard-page .mark-orange { color: var(--dashboard-orange); background: color-mix(in srgb, var(--dashboard-orange) 12%, var(--surface)); }
+.dashboard-page .mark-pink { color: var(--dashboard-rose); background: color-mix(in srgb, var(--dashboard-rose) 12%, var(--surface)); }
+.dashboard-page .metric-trend, .dashboard-page .project-progress-label, .dashboard-page .project-preview-foot > span:last-child { font-size: 12px; }
+.dashboard-page .trend-positive { color: var(--dashboard-green); }
+.dashboard-page .trend-danger { color: var(--dashboard-rose); }
+.dashboard-page .metric-label { color: var(--muted); font-size: 13px; }
+.dashboard-page .metric-foot { font-size: 12px; }
+.dashboard-page .metric-foot a, .dashboard-page .text-link { color: var(--dashboard-violet); }
+.dashboard-page .panel-heading p { font-size: 13px; }
+.dashboard-page .text-link { font-size: 12px; }
+.dashboard-page .project-preview { --preview-accent: var(--dashboard-violet); border-color: color-mix(in srgb, var(--preview-accent) 42%, var(--line)); }
+.dashboard-page .project-preview-blue { --preview-accent: var(--dashboard-blue); }
+.dashboard-page .project-preview-green { --preview-accent: var(--dashboard-green); }
+.dashboard-page .project-preview-orange { --preview-accent: var(--dashboard-orange); }
+.dashboard-page .project-preview-pink { --preview-accent: var(--dashboard-rose); }
+.dashboard-page .project-preview:hover { border-color: var(--preview-accent); }
+.dashboard-page .project-preview h3 { font-size: 14px; }
+.dashboard-page .project-preview > p { font-size: 12px; }
+.dashboard-page .task-item { border-color: color-mix(in srgb, var(--dashboard-violet) 18%, var(--line)); }
+.dashboard-page .task-title { font-size: 14px; }
+.dashboard-page .task-meta { font-size: 12px; }
+.dashboard-page .status-in-progress { color: var(--dashboard-violet); background: color-mix(in srgb, var(--dashboard-violet) 10%, var(--surface)); }
+.dashboard-page .status-in-progress .status-dot, .dashboard-page .bar-progress { background: var(--dashboard-violet); }
+.dashboard-page .status-in-review { color: var(--dashboard-orange); background: color-mix(in srgb, var(--dashboard-orange) 12%, var(--surface)); }
+.dashboard-page .status-in-review .status-dot, .dashboard-page .bar-review { background: var(--dashboard-orange); }
+.dashboard-page .status-done { color: var(--dashboard-green); background: color-mix(in srgb, var(--dashboard-green) 12%, var(--surface)); }
+.dashboard-page .status-done .status-dot, .dashboard-page .bar-done { background: var(--dashboard-green); }
+.dashboard-page .progress-track > span { background: var(--dashboard-violet); }
+.dashboard-page .progress-green > span { background: var(--dashboard-green); }
+.dashboard-page .progress-blue > span { background: var(--dashboard-blue); }
+.dashboard-page .progress-orange > span { background: var(--dashboard-orange); }
+.dashboard-page .progress-pink > span { background: var(--dashboard-rose); }
+.dashboard-page .priority-urgent { color: var(--dashboard-rose); }
+.dashboard-page .priority-urgent::before { background: var(--dashboard-rose); }
+.dashboard-page .priority-high { color: var(--dashboard-orange); }
+.dashboard-page .priority-high::before { background: var(--dashboard-orange); }
+.dashboard-page .priority-medium::before { background: var(--dashboard-orange); }
+.dashboard-page .priority-low::before { background: var(--dashboard-green); }
+.dashboard-page .task-overdue .task-meta .text-danger, .dashboard-page .text-danger { color: var(--dashboard-rose) !important; }
+.dashboard-page .avatar-violet { color: var(--dashboard-violet); }
+.dashboard-page .avatar-blue { color: var(--dashboard-blue); }
+.dashboard-page .avatar-green { color: var(--dashboard-green); }
+.dashboard-page .avatar-orange { color: var(--dashboard-orange); }
+.dashboard-page .avatar-pink { color: var(--dashboard-rose); }
+.dashboard-page .activity-indicator { color: var(--dashboard-violet); background: color-mix(in srgb, var(--dashboard-violet) 12%, var(--surface)); }
+.dashboard-page .activity-complete { color: var(--dashboard-green); background: color-mix(in srgb, var(--dashboard-green) 12%, var(--surface)); }
+.dashboard-page .activity-team { color: var(--dashboard-blue); background: color-mix(in srgb, var(--dashboard-blue) 12%, var(--surface)); }
+.dashboard-page .activity-item strong { color: var(--text); font-size: 12px; }
+.dashboard-page .status-legend > div { font-size: 12px; }
+.dashboard-page .deadline-item > span:last-child strong { font-size: 12px; }
 .project-page-panel, .tasks-panel, .team-panel { padding: 0; }
 .list-toolbar, .task-filters { display: flex; min-height: 62px; align-items: center; gap: 10px; padding: 12px 17px; border-bottom: 1px solid var(--line); }
 .inline-search { display: flex; height: 34px; align-items: center; gap: 8px; padding: 0 10px; color: #9697a8; border: 1px solid var(--line); border-radius: 6px; }

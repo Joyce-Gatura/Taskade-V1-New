@@ -40,7 +40,7 @@ export default function Dashboard() {
           {activeProjects.length ? <div className="project-preview-grid">{activeProjects.slice(0, 4).map((project) => {
             const projectTasks = tasks.filter((task) => task.projectId === project.id)
             const progress = getProjectProgress(project.id, tasks)
-            return <Link className="project-preview" to={`/projects/${project.id}`} key={project.id}>
+            return <Link className={`project-preview project-preview-${project.color}`} to={`/projects/${project.id}`} key={project.id}>
               <div className="project-preview-head"><span className={`project-mark mark-${project.color}`}><Icon name="folder" size={17} /></span></div>
               <h3>{project.name}</h3><p>{project.description || 'No description yet.'}</p>
               <div className="project-progress-label"><span>{progress}% complete</span><span>{projectTasks.length} tasks</span></div><ProgressBar value={progress} color={project.color} />
