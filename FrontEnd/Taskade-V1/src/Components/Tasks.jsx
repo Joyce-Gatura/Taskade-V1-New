@@ -14,7 +14,7 @@ export default function Tasks() {
   const [query, setQuery] = useState('')
   const [status, setStatus] = useState('All statuses')
   const [priority, setPriority] = useState('All priorities')
-  const [assignee, setAssignee] = useState('Olivia Chen')
+  const [assignee, setAssignee] = useState('Everyone')
   const [project, setProject] = useState('All projects')
   const [sortBy, setSortBy] = useState('dueDate')
   const [view, setView] = useState('list')
